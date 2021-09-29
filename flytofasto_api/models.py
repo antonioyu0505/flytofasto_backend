@@ -32,6 +32,7 @@ class Flight(models.Model):
   departure = models.DateTimeField()
   arrival = models.DateTimeField()
   seats = models.PositiveIntegerField()
+  price = models.FloatField()
   location_to = models.ForeignKey(
     Location, 
     on_delete = models.CASCADE,
@@ -55,11 +56,11 @@ class Flight(models.Model):
 
 class Ticket(models.Model):
   seat = models.CharField(max_length=255)
-  price = models.FloatField()
   customer = models.ForeignKey(
     Customer,
     on_delete = models.CASCADE,
-    db_column = 'customer_id'
+    db_column = 'customer_id',
+    null=True
   )
   flight = models.ForeignKey(
     Flight,

@@ -1,0 +1,30 @@
+[
+  {
+    "model": "flytofasto_api.airline",
+    "pk": 1,
+    "fields": {
+      "name": "Avo Lar"
+    }
+  },
+  {
+    "model": "flytofasto_api.airline",
+    "pk": 2,
+    "fields": {
+      "name": "Jare Via"
+    }
+  },
+  {
+    "model": "flytofasto_api.airline",
+    "pk": 3,
+    "fields": {
+      "name": "Enel Aire"
+    }
+  },
+  {
+    "model": "flytofasto_api.airline",
+    "pk": 4,
+    "fields": {
+      "name": "Vía Jando"
+    }
+  }
+]

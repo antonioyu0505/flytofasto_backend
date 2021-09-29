@@ -1,0 +1,80 @@
+[
+  {
+    "model": "flytofasto_api.flight",
+    "pk" : 1,
+    "fields": {
+      "arrival": "2021-09-30T03:19:48.358Z",
+      "departure": "2021-09-28T03:19:48.358Z",
+      "price": 199713.8381,
+      "seats": 40,
+      "location_to": 93,
+      "location_from": 20,
+      "airline": 1
+    }
+  },
+  {
+    "model": "flytofasto_api.flight",
+    "pk" : 2,
+    "fields": {
+      "arrival": "2021-09-30T03:19:48.358Z",
+      "departure": "2021-09-27T03:19:48.358Z",
+      "price": 108074.6407,
+      "seats": 40,
+      "location_to": 17,
+      "location_from": 32,
+      "airline": 2
+    }
+  },
+  {
+    "model": "flytofasto_api.flight",
+    "pk" : 3,
+    "fields": {
+      "arrival": "2021-09-30T03:19:48.359Z",
+      "departure": "2021-09-29T03:19:48.359Z",
+      "price": 282341.0318,
+      "seats": 40,
+      "location_to": 17,
+      "location_from": 28,
+      "airline": 3
+    }
+  },
+  {
+    "model": "flytofasto_api.flight",
+    "pk" : 4,
+    "fields": {
+      "arrival": "2021-09-29T10:19:48.359Z",
+      "departure": "2021-09-29T03:19:48.359Z",
+      "price": 219184.8521,
+      "seats": 40,
+      "location_to": 166,
+      "location_from": 25,
+      "airline": 3
+    }
+  },
+  {
+    "model": "flytofasto_api.flight",
+    "pk" : 5,
+    "fields": {
+      "arrival": "2021-09-29T03:19:48.359Z",
+      "departure": "2021-09-28T03:19:48.359Z",
+      "price": 206973.2987,
+      "seats": 40,
+      "location_to": 64,
+      "location_from": 30,
+      "airline": 1
+    }
+  },
+  {
+    "model": "flytofasto_api.flight",
+    "pk" : 6,
+    "fields": {
+      "arrival": "2021-09-30T15:19:48.359Z",
+      "departure": "2021-09-29T03:19:48.359Z",
+      "price": 275805.7235,
+      "seats": 40,
+      "location_to": 30,
+      "location_from": 64,
+      "airline": 4
+    }
+  }
+]
