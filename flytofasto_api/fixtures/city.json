@@ -1,0 +1,42 @@
+[
+  {
+    "model": "flytofasto_api.city",
+    "pk": 1,
+    "fields": {
+      "name": "Bogota",
+      "province" : 1
+    }
+  },
+  {
+    "model": "flytofasto_api.city",
+    "pk": 2,
+    "fields": {
+      "name": "Cali",
+      "province" : 2
+    }
+  },
+  {
+    "model": "flytofasto_api.city",
+    "pk": 3,
+    "fields": {
+      "name": "Palmira",
+      "province" : 2
+    }
+  },
+  {
+    "model": "flytofasto_api.city",
+    "pk": 4,
+    "fields": {
+      "name": "Miami",
+      "province" : 3
+    }
+  },
+  {
+    "model": "flytofasto_api.city",
+    "pk": 5,
+    "fields": {
+      "name": "Orlando",
+      "province" : 3
+    }
+  }
+]

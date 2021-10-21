@@ -1,5 +1,110 @@
 [
   {
+    "model": "flytofasto_api.airline",
+    "pk": 1,
+    "fields": {
+      "name": "Avo Lar"
+    }
+  },
+  {
+    "model": "flytofasto_api.airline",
+    "pk": 2,
+    "fields": {
+      "name": "Jare Via"
+    }
+  },
+  {
+    "model": "flytofasto_api.airline",
+    "pk": 3,
+    "fields": {
+      "name": "Enel Aire"
+    }
+  },
+  {
+    "model": "flytofasto_api.airline",
+    "pk": 4,
+    "fields": {
+      "name": "Vía Jando"
+    }
+  },
+  {
+    "model": "flytofasto_api.country",
+    "pk": 1,
+    "fields": {
+      "name": "Colombia"
+    }
+  },
+  {
+    "model": "flytofasto_api.country",
+    "pk": 2,
+    "fields": {
+      "name": "United States"
+    }
+  },
+  {
+    "model": "flytofasto_api.province",
+    "pk": 1,
+    "fields": {
+      "name": "Cundinamarca",
+      "country" : 1
+    }
+  },
+  {
+    "model": "flytofasto_api.province",
+    "pk": 2,
+    "fields": {
+      "name": "Valle del Cauca",
+      "country" : 1
+    }
+  },
+  {
+    "model": "flytofasto_api.province",
+    "pk": 3,
+    "fields": {
+      "name": "Florida",
+      "country" : 2
+    }
+  },
+  {
+    "model": "flytofasto_api.city",
+    "pk": 1,
+    "fields": {
+      "name": "Bogota",
+      "province" : 1
+    }
+  },
+  {
+    "model": "flytofasto_api.city",
+    "pk": 2,
+    "fields": {
+      "name": "Cali",
+      "province" : 2
+    }
+  },
+  {
+    "model": "flytofasto_api.city",
+    "pk": 3,
+    "fields": {
+      "name": "Palmira",
+      "province" : 2
+    }
+  },
+  {
+    "model": "flytofasto_api.city",
+    "pk": 4,
+    "fields": {
+      "name": "Miami",
+      "province" : 3
+    }
+  },
+  {
+    "model": "flytofasto_api.city",
+    "pk": 5,
+    "fields": {
+      "name": "Orlando",
+      "province" : 3
+    }
+  }, {
     "model": "flytofasto_api.flight",
     "pk" : 1,
     "fields": {

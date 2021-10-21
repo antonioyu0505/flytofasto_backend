@@ -1,0 +1,16 @@
+[
+  {
+    "model": "flytofasto_api.country",
+    "pk": 1,
+    "fields": {
+      "name": "Colombia"
+    }
+  },
+  {
+    "model": "flytofasto_api.country",
+    "pk": 2,
+    "fields": {
+      "name": "United States"
+    }
+  }
+]

@@ -1,10 +1,11 @@
 from django.contrib import admin
-from .models import Airline, Credit_card, Customer, Flight, Location, Ticket
+from .models import Airline, Credit_card, Customer, Flight, Country, Ticket, Province, City
 
 # Register your models here.
 admin.site.register(Customer)
 admin.site.register(Airline)
 admin.site.register(Flight)
-admin.site.register(Location)
+admin.site.register(Country)
 admin.site.register(Ticket)
-admin.site.register(Credit_card)
+admin.site.register(Province)
+admin.site.register(City)

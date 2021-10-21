@@ -1,12 +1,29 @@
 from django.db import models
 
-class Location(models.Model):
+class Country(models.Model):
   name = models.CharField(max_length=255)
-  level = models.IntegerField()
-  level_reference = models.IntegerField(blank=True, null=True)
-
   class Meta:
-    db_table = 'location'
+    db_table = 'country'
+
+class Province(models.Model):
+  name = models.CharField(max_length=255)
+  country = models.ForeignKey(
+    Country, 
+    on_delete = models.CASCADE,
+    db_column = 'country_id'
+  )
+  class Meta:
+    db_table = 'province'
+
+class City(models.Model):
+  name = models.CharField(max_length=255)
+  province = models.ForeignKey(
+    Province, 
+    on_delete = models.CASCADE,
+    db_column = 'province_id'
+  )
+  class Meta:
+    db_table = 'city'
 
 class Airline(models.Model):
   name = models.CharField(max_length=255)
@@ -34,13 +51,13 @@ class Flight(models.Model):
   seats = models.PositiveIntegerField()
   price = models.FloatField()
   location_to = models.ForeignKey(
-    Location, 
+    City, 
     on_delete = models.CASCADE,
     related_name = 'location_id_to',
     db_column = 'location_id_to'
   )
   location_from = models.ForeignKey(
-    Location, 
+    City, 
     on_delete = models.CASCADE,
     related_name = 'location_id_from',
     db_column = 'location_id_from'

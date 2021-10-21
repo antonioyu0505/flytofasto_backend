@@ -1,0 +1,26 @@
+[
+  {
+    "model": "flytofasto_api.province",
+    "pk": 1,
+    "fields": {
+      "name": "Cundinamarca",
+      "country" : 1
+    }
+  },
+  {
+    "model": "flytofasto_api.province",
+    "pk": 2,
+    "fields": {
+      "name": "Valle del Cauca",
+      "country" : 1
+    }
+  },
+  {
+    "model": "flytofasto_api.province",
+    "pk": 3,
+    "fields": {
+      "name": "Florida",
+      "country" : 2
+    }
+  }
+]
