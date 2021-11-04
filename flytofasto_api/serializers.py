@@ -29,8 +29,8 @@ class AirlineSerializer(serializers.ModelSerializer):
     fields = '__all__'
 
 class FlightSerializer(serializers.ModelSerializer):
-  location_to = LocationSerializer()
-  location_from = LocationSerializer()
+  arrival_city = LocationSerializer()
+  departure_city = LocationSerializer()
   airline = AirlineSerializer()
   class Meta:
     model = Flight
