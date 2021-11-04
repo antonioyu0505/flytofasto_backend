@@ -104,7 +104,16 @@
       "name": "Orlando",
       "province" : 3
     }
-  }, {
+  }, 
+  {
+    "model": "flytofasto_api.city",
+    "pk": 6,
+    "fields": {
+      "name": "Cape Coral",
+      "province" : 3
+    }
+  },
+  {
     "model": "flytofasto_api.flight",
     "pk" : 1,
     "fields": {
@@ -112,8 +121,8 @@
       "departure": "2021-09-28T03:19:48.358Z",
       "price": 199713.8381,
       "seats": 40,
-      "location_to": 1,
-      "location_from": 2,
+      "arrival_city": 1,
+      "departure_city": 2,
       "airline": 1
     }
   },
@@ -125,8 +134,8 @@
       "departure": "2021-09-27T03:19:48.358Z",
       "price": 108074.6407,
       "seats": 40,
-      "location_to": 1,
-      "location_from": 2,
+      "arrival_city": 1,
+      "departure_city": 2,
       "airline": 2
     }
   },
@@ -138,8 +147,8 @@
       "departure": "2021-09-29T03:19:48.359Z",
       "price": 282341.0318,
       "seats": 40,
-      "location_to": 2,
-      "location_from": 3,
+      "arrival_city": 2,
+      "departure_city": 3,
       "airline": 3
     }
   },
@@ -151,8 +160,8 @@
       "departure": "2021-09-29T03:19:48.359Z",
       "price": 219184.8521,
       "seats": 40,
-      "location_to": 4,
-      "location_from": 5,
+      "arrival_city": 4,
+      "departure_city": 5,
       "airline": 3
     }
   },
@@ -164,8 +173,8 @@
       "departure": "2021-09-28T03:19:48.359Z",
       "price": 206973.2987,
       "seats": 40,
-      "location_to": 4,
-      "location_from": 5,
+      "arrival_city": 4,
+      "departure_city": 5,
       "airline": 1
     }
   },
@@ -177,8 +186,8 @@
       "departure": "2021-09-29T19:19:48.359Z",
       "price": 275805.7235,
       "seats": 40,
-      "location_to": 5,
-      "location_from": 4,
+      "arrival_city": 5,
+      "departure_city": 4,
       "airline": 4
     }
   }

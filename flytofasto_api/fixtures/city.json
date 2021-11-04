@@ -38,5 +38,13 @@
       "name": "Orlando",
       "province" : 3
     }
+  },
+  {
+    "model": "flytofasto_api.city",
+    "pk": 6,
+    "fields": {
+      "name": "Cape Coral",
+      "province" : 3
+    }
   }
 ]

@@ -50,17 +50,17 @@ class Flight(models.Model):
   arrival = models.DateTimeField()
   seats = models.PositiveIntegerField()
   price = models.FloatField()
-  location_to = models.ForeignKey(
+  arrival_city = models.ForeignKey(
     City, 
     on_delete = models.CASCADE,
-    related_name = 'location_id_to',
-    db_column = 'location_id_to'
+    related_name = 'arrival_city_id',
+    db_column = 'arrival_city_id'
   )
-  location_from = models.ForeignKey(
+  departure_city = models.ForeignKey(
     City, 
     on_delete = models.CASCADE,
-    related_name = 'location_id_from',
-    db_column = 'location_id_from'
+    related_name = 'departure_city_id',
+    db_column = 'departure_city_id'
   )
   airline = models.ForeignKey(
     Airline, 
