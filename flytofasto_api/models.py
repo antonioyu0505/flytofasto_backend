@@ -88,7 +88,7 @@ class Ticket(models.Model):
   class Meta:
     db_table = 'ticket'
 
-class Credit_card(models.Model):
+class CreditCard(models.Model):
   card_number = models.CharField(max_length=255, unique=True)
   card_type = models.CharField(max_length=255)
   expiration_year = models.PositiveIntegerField()
