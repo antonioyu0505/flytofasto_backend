@@ -190,5 +190,18 @@
       "departure_city": 4,
       "airline": 4
     }
+  },
+  {
+    "model": "flytofasto_api.flight",
+    "pk" : 7,
+    "fields": {
+      "arrival": "2021-09-30T15:19:48.359Z",
+      "departure": "2021-09-29T19:19:48.359Z",
+      "price": 475805.7235,
+      "seats": 40,
+      "arrival_city": 5,
+      "departure_city": 4,
+      "airline": 2
+    }
   }
 ]
