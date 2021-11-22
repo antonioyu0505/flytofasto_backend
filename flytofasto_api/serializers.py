@@ -52,26 +52,7 @@ class CustomerSerializer(serializers.ModelSerializer):
     instance.document_number = validated_data.get('document_number', instance.document_number)
     instance.save()
     return instance
-
-class CreditCardSerializer(serializers.ModelSerializer):
-  customer = CustomerSerializer()
-  class Meta:
-    model = CreditCard
-    fields = '__all__'
-
-  def create(self, validated_data):
-    return CreditCard.objects.create(**validated_data)
-  
-  def update(self, instance, validated_data):
-    instance.card_type = validated_data.get('card_type', instance.card_type)
-    instance.card_number = validated_data.get('number', instance.card_number)
-    instance.expiration_year = validated_data.get('expiration_date', instance.expiration_year)
-    instance.expiration_month = validated_data.get('expiration_month', instance.expiration_month)
-    instance.security_code = validated_data.get('security_code', instance.security_code)
-    instance.customer = validated_data.get('customer', instance.customer)
-    instance.save()
-    return instance
-
+    
 class TicketSerializerGet(serializers.ModelSerializer):
   customer = CustomerSerializer()
   flight = FlightSerializer()
@@ -80,18 +61,15 @@ class TicketSerializerGet(serializers.ModelSerializer):
     fields = '__all__'
 
 class TicketSerializer(serializers.ModelSerializer):
-  customer = CustomerSerializer()
+  customer = serializers.PrimaryKeyRelatedField(queryset=Customer.objects.all())
   flight = serializers.PrimaryKeyRelatedField(queryset=Flight.objects.all())
   class Meta:
     model = Ticket
     fields = '__all__'
 
   def create(self, validated_data):
-    customer_data = validated_data.pop('customer')
-    customer = Customer.objects.get_or_create(**customer_data)[0]
     validated_data['flight'].seats -= 1
     validated_data['flight'].save()
-    validated_data['customer'] = customer
     return Ticket.objects.create(**validated_data)
 
   def update(self, instance, validated_data):

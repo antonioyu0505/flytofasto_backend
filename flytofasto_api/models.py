@@ -24,6 +24,7 @@ class City(models.Model):
   )
   class Meta:
     db_table = 'city'
+    ordering = ['id']
 
 class Airline(models.Model):
   name = models.CharField(max_length=255)
@@ -70,6 +71,7 @@ class Flight(models.Model):
 
   class Meta:
     db_table = 'flight'
+    ordering = ['id']
 
 class Ticket(models.Model):
   seat = models.CharField(max_length=255)
@@ -87,18 +89,4 @@ class Ticket(models.Model):
 
   class Meta:
     db_table = 'ticket'
-
-class CreditCard(models.Model):
-  card_number = models.CharField(max_length=255, unique=True)
-  card_type = models.CharField(max_length=255)
-  expiration_year = models.PositiveIntegerField()
-  expiration_month = models.PositiveIntegerField()
-  security_code = models.PositiveIntegerField()
-  customer = models.ForeignKey(
-    Customer,
-    on_delete = models.CASCADE,
-    db_column = 'customer_id'
-  )
-
-  class Meta:
-    db_table = 'credit_card'
+    ordering = ['id']
